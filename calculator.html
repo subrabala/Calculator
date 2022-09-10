@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <div id="calc">
+      <div id="heading"><h1>You Can Always Count On Me ;)</h1></div>
+      <input type="text" id="result"/>
+      <div id="buttons">
+        <div>
+          <div>
+            <div>
+              <button id="clear" onclick="clear1()">CE</button><button id="delete" >DEL</button><button id="divbtn" value ="/" onclick="view('/')">/</button><button id="rem" value ="%" onclick="view('%')">%</button>
+            </div>
+            <div>
+              <button id="one" value ="1" onclick="view('1')">1</button><button id="two" value ="2" onclick="view('2')">2</button><button id="three" value ="3" onclick="view('3')">3</button><button id="addbtn" value="+" onclick="view('+')">+</button>
+            </div>
+           <div>
+            <button id="four" value ="4" onclick="view('4')">4</button><button id="five" value ="5" onclick="view('5')">5</button><button id="six" value ="6" onclick="view('6')">6</button><button id="subbtn" value="-"  onclick="view('-')">-</button>
+           </div>
+      <div>
+        <button id="seven" value ="7" onclick="view('7')">7</button><button id="eight" value ="8" onclick="view('8')">8</button><button id="nine" value ="9" onclick="view('9')">9</button><button id="mulbtn" value="*" onclick="view('*')">*</button>
+      </div>
+          </div>
+          <div>
+            <button id="dot" value ="." onclick="view('.')">.</button><button id="zero" value ="0" onclick="view('0')">0</button><button id="eqbtn" value="=">=</button>
+          </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
